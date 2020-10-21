@@ -1,0 +1,28 @@
+<div class="row" >
+    <div class="col-xs-12 col-sm-6 col-md-4" >
+       <div class ="card" *ngFor="let serie of series">
+           <div class ="img" >
+              <a [routerLink]="['../series-detail', serie.id]">
+                <img 
+                [src]="serie | serieImg "
+                [alt]="serie.original_name"
+                [matTooltip]="serie.id"/>
+            </a>
+           </div>
+           <div class="card-inner">
+             <div class="header">
+               <a [routerLink]="['../series-detail', serie.id]">
+                <h4>{{serie.original_name}}</h4>
+                </a>
+                <div *ngFor="let act of actors.cast">
+                  <h4>{{act.character}}</h4>
+                </div> 
+          </div>
+          <button class="btn btn-dark"
+          (click)="getActors(serie.id)">
+          actors
+        </button>
+           </div>
+       </div>
+    </div>
+  </div>

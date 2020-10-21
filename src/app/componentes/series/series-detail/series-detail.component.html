@@ -1,0 +1,56 @@
+<div class="row" *ngIf="series$ | async as serie">
+    <div class="col-xs-12 col-sm-6 col-md-4" >
+       <div class ="card" >
+           <div class ="img" >
+                <img 
+                [src]="serie | serieImg "
+                [alt]="serie.original_name">
+           </div>
+           <div class="card-inner">
+             <div class="header">
+                <h4>{{serie.original_name}}</h4>
+                <h8>{{serie.overview}}</h8>
+                <ul>
+                    <h4>Rating</h4>
+                  <li>
+                <h8>{{serie.vote_average}}</h8>
+                  </li>
+                <h4>Firs date on air</h4>
+                <li>
+                <h8>{{serie.first_air_date | date:'longDate'}}</h8>
+                </li>
+                <h4> Episode Run Time</h4>
+                <li>
+                <h8>{{serie.episode_run_time}}min</h8>
+              </li>
+              </ul>
+                <ul>
+                  <h4>Geners</h4>
+          <li  *ngFor="let genre of serie.genres"  >  
+                <h8>{{genre.name}}</h8>
+          </li>  
+          <h4>Productions</h4>
+          <li *ngFor="let production of serie.production_companies">
+            <h8>{{production.name}}</h8>
+          </li>
+          <h4>Original Language</h4>
+          <li >
+            <h8>{{serie.languages}}</h8>
+          </li>
+          <h4>Seasons:</h4>
+          <li *ngFor="let season of serie.seasons">
+            <h8>{{season.name}}</h8>
+            <h8>{{season.overview}}</h8>
+            <h8>{{season.episode_count}}</h8>
+          </li>
+        </ul>
+          </div>
+           </div>
+       </div>
+    </div>
+  </div>
+  <button (click)="onGoBack()"
+  clas="btn btn-primary btn-lg mt-3">
+    Back
+  </button>
+

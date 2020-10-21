@@ -1,0 +1,56 @@
+<div class="row" *ngIf="movies$ | async as movie">
+    <div class="col-xs-12 col-sm-6 col-md-4" >
+       <div class ="card" >
+           <div class ="img" >
+                <img 
+                [src]="movie | movieImg "
+                [alt]="movie.title">
+           </div>
+           <div class="card-inner">
+             <div class="header">
+                <h4>{{movie.title}}</h4>
+                <h8>{{movie.overview}}</h8>
+                <ul>
+                    <h4>Rating</h4>
+                  <li>
+                <h8>{{movie.vote_average}}</h8>
+                  </li>
+                <h4>Data</h4>
+                <li>
+                <h8>{{movie.release_date | date:'longDate'}}</h8>
+                </li>
+                <h4> Duration Time</h4>
+                <li>
+                <h8>{{movie.runtime}}min</h8>
+              </li>
+              </ul>
+                <ul>
+                  <h4>Geners</h4>
+          <li  *ngFor="let genre of movie.genres"  >  
+                <h8>{{genre.name}}</h8>
+          </li>  
+          <h4>Productions</h4>
+          <li *ngFor="let production of movie.production_companies">
+            <h8>{{production.name}}</h8>
+          </li>
+          <h4>Languages</h4>
+          <li *ngFor="let language of movie.spoken_languages">
+            <h8>{{language.name}}</h8>
+          </li>
+        </ul>
+        <div *ngIf="actors | async as actor">
+          <ul>
+          <li  *ngFor="let act of actor.cast"  >  
+            <h8>{{act.character}}</h8>
+      </li>  
+    </ul>
+        </div>
+          </div>
+           </div>
+       </div>
+    </div>
+  </div>
+  <button (click)="onGoBack()"
+  clas="btn btn-primary btn-lg mt-3">
+    Back
+  </button>

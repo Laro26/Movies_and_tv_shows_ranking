@@ -1,0 +1,59 @@
+[
+  {
+    "movieid": 1,
+    "movietitle": "Harry Potter and the Sorcerer Stone",
+    "movieimg" : "",
+    "movieranking": 4.5,
+    "moviedetail":"Harry potter first movie",
+    "movieactor": ["emma watsson", "Rupert Grint", "Tom Felton"]
+  },
+  {
+    "movieid": 2,
+    "movietitle": "Harry Potter and the chamber of secrets",
+    "movieimg" : "",
+    "movieranking": 4,
+    "moviedetail":"Harry potter second movie",
+    "movieactor": ["emma watsson2", "Rupert Grint2", "Tom Felton2"]
+  },
+  {
+    "movieid": 3,
+    "movietitle": "Harry Potter and the Prisioner of Askaban",
+    "movieimg" : "",
+    "movieranking": 4.3,
+    "moviedetail":"Harry potter third movie",
+    "movieactor": ["emma watsson3", "Rupert Grint3", "Tom Felton3"]
+  },
+  {
+    "movieid": 4,
+    "movietitle": "Harry Potter and the Globert of fire",
+    "movieimg" : "",
+    "movieranking": 4,
+    "moviedetail":"Harry potter four movie",
+    "movieactor": ["emma watsson4", "Rupert Grint4", "Tom Felton4"]
+  },
+  {
+    "movieid": 5,
+    "movietitle": "Harry Potter and the order of the poenix",
+    "movieimg" : "",
+    "movieranking": 4.8,
+    "moviedetail":"Harry potter five movie",
+    "movieactor": ["emma watsson5", "Rupert Grint5", "Tom Felton5"]
+  },
+  {
+    "movieid": 6,
+    "movietitle": "Harry Potter and the half-blod prince",
+    "movieimg" : "",
+    "movieranking": 4.9,
+    "moviedetail":"Harry potter six movie",
+    "movieactor": ["emma watsson6", "Rupert Grint6", "Tom Felton6"]
+  },
+  {
+    "movieid": 7,
+    "movietitle": "Harry Potter and the deathly hallows",
+    "movieimg" : "",
+    "movieranking": 4.7,
+    "moviedetail":"Harry potter seven movie",
+    "movieactor": ["emma watsson7", "Rupert Grint7", "Tom Felton7"]
+  }
+ 
+]

@@ -1,0 +1,35 @@
+<div class="row" infinite-scroll (scrolled)="onScrollDown()">
+  <div class="col-xs-12 col-sm-6 col-md-4">
+    <div class="card" *ngFor="let movie of movies">
+      <div class="img">
+        <a [routerLink]="['/movies-detail', movie.id]">
+          <img [src]="movie | movieImg " 
+          [alt]="movie.title"
+           [matTooltip]="movie.id" />
+        </a>
+      </div>
+      <div class="card-inner">
+        <div class="header">
+          <a [routerLink]="['/movies-detail', movie.id]">
+            <h4>{{movie.title}}</h4>
+          </a>
+          <div *ngFor="let act of actors.cast">
+            <h4>{{act.characters}}</h4>
+          </div>
+        </div>
+        <button class="btn btn-dark" (click)="getActors(movie.id)">
+          actors
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="col-xs-12 col-sm-12 col-md-12 mt-5 container-notFound">
+    <p>No results.......</p>
+  </div>
+</div>
+<button [ngclass]="'no-hidden'" 
+*ngIf="showGoUpButton"
+ class="btn btn-dark"
+  (click)="onScrollTop()">
+  Go UP
+</button>

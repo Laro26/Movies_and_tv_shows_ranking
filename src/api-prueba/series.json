@@ -1,0 +1,38 @@
+[
+    {
+        "seriesid": 2,
+        "seriestitle":"the big bang theory",
+        "seriesimg":"",
+        "seriesranking":5,
+        "seriesactor":["Jim Parsons","Johnny Galecki","Simon Helberg"],
+        "seasonid":10,
+        "seasondetail": "final de temporada",
+        "episodeid": 1,
+        "episodetitle":"adios",
+        "episodedetail": "sheldon gana un nobel y Penny cuenta que esta embarazada"
+      },
+      {
+        "seriesid": 10,
+        "seriestitle":"the big bang theory",
+        "seriesimg":"",
+        "seriesranking":5,
+        "seriesactor":["Jim Parsons","Johnny Galecki","Simon Helberg"],
+        "seasonid":13,
+        "seasondetail": "temporada no existente",
+        "episodeid": 12,
+        "episodetitle":"inventada",
+        "episodedetail": "no se que pasa"
+      },{
+        "seriesid": 2,
+        "seriestitle":"the big bang theory",
+        "seriesimg":"",
+        "seriesranking":5,
+        "seriesactor":["Jim Parsons","Johnny Galecki","Simon Helberg"],
+        "seasonid":13,
+        "seasondetail": "temporada noo existente",
+        "episodeid": 10,
+        "episodetitle":"invenrada numero 2",
+        "episodedetail": "sheldon gana un nobel y Penny cuentaaaaa que esta embarazada"
+      }
+    
+]
